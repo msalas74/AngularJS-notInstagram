@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body ng-controller="myCtrl">
+
+	<header class="masthead">
+		<img src="img/ng-instagram.png">
+	</header>
+	<section>
+		<form name="myForm" novalidate ng-submit="searchInstagram(query)">
+			<input type="text" name="search" ng-model="query" placeholder="Enter a tag to search" required />
+			<input type="submit" value="Submit"/>
+			<p ng-if="querried">We found {{images.length}} results for "{{searched}}".</p>
+			<p ng-if="error">Tag required!</p>
+
+			<div >
+				<img class="resultImages" ng-show="querried" ng-repeat="image in images" ng-src="{{image.images.low_resolution.url}}" />
+			</div>
+		</form>
+	</section>
+	
+
+	<script src="https://code.angularjs.org/1.3.14/angular.js" data-semver="1.3.14" data-require="angular.js@1.3.14"></script>
+    <script data-require="angular-animate@*" data-semver="1.4.0-beta.2" src="https://code.angularjs.org/1.4.0-beta.2/angular-animate.js"></script>
+    <script type="text/javascript" src="js/myApp.js"></script>
+</body>
+</html>
