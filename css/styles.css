@@ -64,6 +64,7 @@ table {
 /*---main box styles---*/
 body {
 	text-align: center;
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
 }
 
 input {
@@ -128,6 +129,7 @@ footer li {
 	margin: .2em 2rem 3em 0;
 	padding: .2em;
 	float: right;
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
 
 }
 
@@ -148,6 +150,7 @@ footer li {
 	vertical-align: middle;
 	font-size: 1.5em;
 	border-radius: 10px;
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
 
 }
 
