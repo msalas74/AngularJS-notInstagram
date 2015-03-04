@@ -125,7 +125,7 @@ footer li {
 	font-size: 1.5em;
 	border-radius: 10px;
 	color: #fff;
-	margin: .2em 2rem .2em 0;
+	margin: .2em 2rem 3em 0;
 	padding: .2em;
 	float: right;
 
@@ -163,6 +163,7 @@ footer li {
 }
 em {
 	color: orangered;
+	text-shadow: 1px 1px 4px #000;
 }
 
 /*---animation styles---*/
