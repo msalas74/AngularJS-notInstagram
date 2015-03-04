@@ -66,16 +66,107 @@ body {
 	text-align: center;
 }
 
+input {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #dcdcdc;
+}
+
 .masthead {
+	text-align: center;
+	background: url("/img/header.jpg") center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 25rem;
+
+}
+
+.masthead img {
 	margin-top: 4rem;
+	border-radius:15px;
+}
+
+.container {
+	width: 334px;
+	margin: 0 auto;
+}
+
+.clearFix {
+	height: 1px;
+	clear: both;
+}
+
+footer {
+	margin-top: 2em;
+	font-size: 1.5em;
+	color: #dcdcdc;
+}
+
+footer li {
+	margin: 0 auto;
+	padding: .5em 0;
+	width: 334px;
+	border-top: 1px solid #dcdcdc;
 }
 
 
-/*---animation styles---*/
+/*---ui styles---*/
+.buttons {
+	background-color: rgba( 255, 255, 255, 0);
+	border: 2px solid #fff;
+	font-size: 1.5em;
+	border-radius: 10px;
+	color: #fff;
+	margin: .2em 2rem .2em 0;
+	padding: .2em;
+	float: right;
+
+}
+
+.buttons:hover {
+	cursor: pointer;
+}
+
+.errorMsg {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.querry {
+	margin: .2em auto;
+	padding: .2em;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.5em;
+	border-radius: 10px;
+
+}
+
+.querryResult {
+	font-size: 1.2em;
+	color: #fff;
+}
+
 
 .resultImages {
-	width: 306px;
-	height: 306px;
+	margin: .2em;
+
+}
+em {
+	color: orangered;
+}
+
+/*---animation styles---*/
+
+.photos {
 	overflow: hidden;
 	opacity: 1;
 	-webkit-transition: all linear 1.0s;
@@ -84,8 +175,19 @@ body {
 	transition: all linear 1.0s;
 }
 
-.results.ng-hide {
+.photos.ng-hide {
 	opacity: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak],[x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+
+
+@media screen and (min-width: 470px) {
+
+
 }
 
 
