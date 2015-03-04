@@ -78,7 +78,7 @@ a {
 
 .masthead {
 	text-align: center;
-	background: url("/img/header.jpg") center center no-repeat;
+	background: url("img/header.jpg") center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
